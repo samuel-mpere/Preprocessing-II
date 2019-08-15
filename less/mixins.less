@@ -1,1 +1,28 @@
 // Mixins in here
+
+//Mixins
+
+.borderStyle() {
+    border-bottom:2px dotted @navigation-border
+}
+
+
+//Parametric Mixins
+
+.niceButtonStyle(){
+    color: @main-bg;
+    font-size: @gigantic;
+	text-decoration: none;
+	background: @button-bg;
+	// padding: 20px;
+	border-radius: 25px;
+	display: inline-block;
+	border: none;
+}
+.flexDisplayMethod (@justify, @direction){
+    display: flex;
+    flex-direction: @direction;
+    justify-content: @justify;
+}
+
+
