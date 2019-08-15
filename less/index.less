@@ -7,8 +7,16 @@
 @import "footer.less";
 @import "home-page.less";
 
-// navigation
 
+
+//container
+.container{
+    @media @mobile{
+        padding: 0 20px;
+    }
+}
+
+// navigation
 .navigation{
     .borderStyle(); 
     .flexDisplayMethod(space-between, row);
@@ -21,9 +29,36 @@
         padding-top: 12px;
     }
 
+    @media @mobile {
+        .flexDisplayMethod(center, column);
+        .navLogo{
+            text-align: center;
+        };
+        .navBar{
+            .flexDisplayMethod(space-evenly, row)
+        }
+
+    }
 }
 
 //button 
  .btn{
- .niceButtonStyle()
+ .niceButtonStyle();
  }
+
+//destination 
+.content-pick{
+    @media @mobile{
+        .flexDisplayMethod(center, column);
+        width: 100%;
+
+        .destination{
+            .flexDisplayMethod(center, column);
+            // background-color: green;
+            width: 100%;
+    }
+   
+    }
+}
+
+    
