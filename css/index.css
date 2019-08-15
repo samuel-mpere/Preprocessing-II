@@ -275,11 +275,15 @@ img {
   border: none;
 }
 @media (max-width: 550px) {
+  .destination {
+    width: 100%;
+  }
+}
+@media (max-width: 550px) {
   .content-pick {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 100%;
   }
   .content-pick .destination {
     display: flex;
