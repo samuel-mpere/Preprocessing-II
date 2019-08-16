@@ -1,1 +1,68 @@
 // Follow the order in the readme
+@import "variables.less";
+@import "mixins.less";
+@import "reset.less";
+@import "global.less";
+@import "navigation.less";
+@import "footer.less";
+@import "home-page.less";
+
+
+
+//container
+.container{
+    @media @mobile{
+        padding: 0 20px;
+    }
+}
+
+// navigation
+.navigation{
+    .borderStyle(); 
+    .flexDisplayMethod(space-between, row);
+
+    .navBar nav a{
+        .navBarDesign(@font-color);
+    } 
+
+    .navBar{
+        padding-top: 12px;
+    }
+
+    @media @mobile {
+        .flexDisplayMethod(center, column);
+        .navLogo{
+            text-align: center;
+        };
+        .navBar{
+            .flexDisplayMethod(space-evenly, row)
+        }
+
+    }
+}
+
+//button 
+ .btn{
+ .niceButtonStyle();
+ }
+
+// //destination 
+// .destination{
+//     @media @mobile{
+//         width: 100%;
+    }
+
+}
+.content-pick{
+    @media @mobile{
+        .flexDisplayMethod(center, column);
+
+        .destination{
+            .flexDisplayMethod(center, column);
+            width: 100%;
+    }
+   
+    }
+}
+
+    
